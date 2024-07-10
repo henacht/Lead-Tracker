@@ -15,6 +15,11 @@ inputBtn.addEventListener("click", function () {
     inputEl.value = ""
     renderLeads()
 })
+deleteBtn.addEventListener("dblclick", function () {
+    localStorage.clear()
+    myLeads = []
+    renderLeads()
+})
 
 function renderLeads() {
     let listItems = ""
